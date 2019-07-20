@@ -1,0 +1,41 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Jul 19 20:31:25 2019] ***
+compiled with version: 7.4.0 on 19 July 2019 10:32:07
+os: Linux-4.15.0-48-generic #51-Ubuntu SMP Wed Apr 3 08:28:49 UTC 2019
+nodename: iZwz96ohwrcvsgroe0prryZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /data/wwwroot/mysite
+detected binary path: /data/venv/mysite/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /data/wwwroot/mysite/
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7804
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8997 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Jan 14 2019, 11:02:34)  [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x560890cffcd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 291616 bytes (284 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x560890cffcd0 pid: 24272 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 24272, cores: 1)
+spawned uWSGI worker 2 (pid: 24274, cores: 1)
+spawned uWSGI worker 3 (pid: 24275, cores: 1)
+spawned uWSGI worker 4 (pid: 24276, cores: 1)
+[pid: 24274|app: 0|req: 1/1] 113.88.87.80 () {50 vars in 874 bytes} [Fri Jul 19 20:31:46 2019] GET / => generated 16559 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 96 bytes (1 switches on core 0)
+[pid: 24274|app: 0|req: 2/2] 92.118.160.53 () {34 vars in 502 bytes} [Fri Jul 19 20:34:31 2019] GET / => generated 16559 bytes in 2 msecs (HTTP/1.0 200) 3 headers in 96 bytes (1 switches on core 0)
